@@ -1,0 +1,70 @@
+.header{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0 24px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+.SanduicheBar{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 24px;
+  flex-grow: 1;
+  height: 48px;
+  
+}
+
+.navBar{
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  font-weight: 400;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.listaOcultar{
+  font-size: 0.875rem;
+    
+}
+
+ul,li{
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+li{
+  color: #ff9966;
+  
+}
+
+img{
+  width: 36px;
+  height: 36px;
+}
+
+
+@media(width <= 600px) {
+  .listaOcultar{
+    display: none;
+  }
+}
+
+@media(width > 600px) and (width <= 960px) {
+  .listaOcultar{
+    display: none;
+  }
+}
+

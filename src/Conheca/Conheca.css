@@ -1,0 +1,105 @@
+.containerConheca{
+  padding: 128px 0px;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+    
+}
+
+.containerConheca h2{
+  font-size: 3.75rem;
+  color: #ff9966;
+}
+
+.containerConheca h3{
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.containerGrid{
+  width: 960px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  justify-content: center;
+  align-content: center;
+  padding: 16px;
+}
+
+
+.containerCard{
+  width: 100%;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+  font-size: 0.875rem;
+  line-height: 1.43;
+  box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.9);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+ .divCont, divCont1{
+    flex-grow: 1;
+  
+}
+
+ .divCont{
+    padding: 16px;
+}
+
+.imgCard{
+  width: 100%;
+  height: 130px;
+}
+
+.divCont h5{
+  color: #ff9966;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.divCont p{
+  font-size: 0.875rem;
+}
+
+
+@media(width <= 600px) {
+  .containerConheca h2{
+    font-size: 2.125rem;
+    
+  }
+  
+  .containerGrid{
+    width: 100%;
+  }
+  
+  .containerConheca h3{
+    font-size: 1rem;
+    margin-bottom: 40px;
+  }
+
+  .containerGrid{
+    grid-template-columns: repeat(1, 1fr);
+    
+  }
+
+  .containerConheca{
+    padding: 64px 0px;
+  }
+}
+
+@media(width > 600px) and (width <= 960px) {
+  .containerGrid{
+    grid-template-columns: repeat(2, 1fr);
+    
+  }
+
+  .containerGrid{
+    width: 100%;
+  }
+  
+}
+
